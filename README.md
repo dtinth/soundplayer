@@ -1,9 +1,9 @@
 soundplayer
 ===========
 
-A very simple sampled sound file player written using BASS library, so can play WAV, MP3, OGG, MO3, and a lot more. Communicates via standard input.
+A very simple sampled sound file player written using FMOD Ex library, so can play WAV, MP3, OGG, and a lot more. Communicates via standard input.
 
-So to compile, compile with [BASS](http://www.un4seen.com/bass.html).
+So to compile, compile with [FMOD Ex](http://www.fmod.org/products/fmodex.html).
 
 
 
@@ -17,15 +17,16 @@ Available commands are:
 * `s` - stops all playing sound
 * `lPATH` - loads the sample file at PATH but don't play it yet (won't load same file twice)
 * `pPATH` - plays the loaded sample file at PATH (or load if it isn't already loaded)
+* `vVOLUME` - sets the volume of the next sound to play (0.0 to 1.0, inclusive)
 
 Example usage:
 
     l/home/dtinth/wav/wav01.wav
-	p/home/dtinth/wav/wav01.wav
-	p/home/dtinth/wav/wav02.wav
-	s
-	p/home/dtinth/wav/wav03.wav
-	s
+    p/home/dtinth/wav/wav01.wav
+    p/home/dtinth/wav/wav02.wav
+    s
+    p/home/dtinth/wav/wav03.wav
+    s
 
 
 Why
