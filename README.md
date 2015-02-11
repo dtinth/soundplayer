@@ -3,8 +3,13 @@ soundplayer
 
 A very simple sampled sound file player written using FMOD Ex library, so can play WAV, MP3, OGG, and a lot more. Communicates via standard input.
 
-So to compile, compile with [FMOD Ex](http://www.fmod.org/products/fmodex.html).
+So to compile, compile with [FMOD Ex](http://www.fmod.org/).
 
+
+Building
+--------
+
+The provided Makefile assumes that you put your FMOD Ex installation at `/opt/fmodex`.
 
 
 Usage
