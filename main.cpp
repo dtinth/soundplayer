@@ -82,6 +82,12 @@ int main(int argc, const char * argv[])
 		fprintf(stderr, "Cannot create fmod! %d: %s\n", result, FMOD_ErrorString(result));
 		return 1;
 	}
+
+	result = fmod->setSoftwareChannels(512);
+	if (result != FMOD_OK) {
+		fprintf(stderr, "Cannot init fmod! %d: %s\n", result, FMOD_ErrorString(result));
+		return 1;
+	}
 	
 	result = fmod->init(100, FMOD_INIT_NORMAL, 0);
 	if (result != FMOD_OK) {
