@@ -46,6 +46,7 @@ bool Sample::play(float volume) {
 		return false;
 	}
 	result = channel->setVolume(volume);
+	result = channel->setLoopCount(0);
 	result = channel->setPaused(false);
 	return true;
 }
